@@ -1,8 +1,8 @@
 {
-  "name": "insight-bitcore-api",
+  "name": "insight-bitcore-api-ringo",
   "description": "An open-source bitcoin blockchain API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
-  "version": "0.2.18",
-  "repository": "git://github.com/bitpay/insight-api.git",
+  "version": "0.2.18-ringofork",
+  "repository": "git://github.com/kazu0617/insight-api-ringo.git",
   "contributors": [{
     "name": "Matias Alejo Garcia",
     "email": "ematiu@gmail.com"
@@ -23,9 +23,9 @@
     "email": "jungans@gmail.com"
   }],
   "bugs": {
-    "url": "https://github.com/bitpay/insight-api/issues"
+    "url": "https://github.com/kazu0617/insight-api-ringo/issues"
   },
-  "homepage": "https://github.com/bitpay/insight-api",
+  "homepage": "https://github.com/kazu0617/insight-api-ringo",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -48,7 +48,7 @@
     "base58-native": "0.1.2",
     "bignum": "*",
     "morgan": "*",
-    "bitcore": "git://github.com/BitzenyCoreDevelopers/bitcore-bitzeny.git",
+    "bitcore": "git://github.com/kazu0617/bitcore-ringo.git",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "^2.3.0",

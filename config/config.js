@@ -19,20 +19,20 @@ function getUserHome() {
   return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
-var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight-bitzeny');
+var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight-ringo');
 
 if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
   db = home;
   port = '3000';
-  b_port = '9252';
-  p2p_port = '9253';
+  b_port = '9393';
+  p2p_port = '9292';
 } else {
   env = 'testnet';
   db = home + '/testnet';
   port = '3001';
-  b_port = '19252';
-  p2p_port = '19253';
+  b_port = '19393';
+  p2p_port = '19292';
 }
 port = parseInt(process.env.INSIGHT_PORT) || port;
 
@@ -57,9 +57,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\BitZeny\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/BitZeny/';
-  if (isLinux) dataDir = process.env.HOME + '/.bitzeny/';
+  if (isWin) dataDir = '%APPDATA%\\Ringo\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Ringo/';
+  if (isLinux) dataDir = process.env.HOME + '/.ringo/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 
