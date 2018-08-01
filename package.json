@@ -1,7 +1,7 @@
 {
   "name": "insight-bitcore-api-sandego",
   "description": "An open-source bitcoin blockchain API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
-  "version": "0.2.18-ringofork",
+  "version": "0.2.18-SanDeGofork",
   "repository": "git://github.com/zinntikumugai/insight-api-sandego.git",
   "contributors": [{
     "name": "Matias Alejo Garcia",
